@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .for-signup{
+display: flex;
+justify-content: center;
+width: 100%;
+box-sizing: border-box;
+
+}
+.d-flex{
+border: 1px solid black;
+width: 400px;
+height: 400px;
+display: flex;
+justify-content: center;
+
+}
+.d-flex form{
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+input{
+width: 200px;
+height: 40px;
+border-radius: 10px;
+}
+button{
+height: 45px;
+width: 200px;
+}
+</style>
+<body>
+    <div class="for-signup">
+        <div class="d-flex">
+            <form action="/add-expense" method="post">
+                <h1>here you can sign up</h1>
+                <input type="text" placeholder="enter the type" name="type">
+                <input type="text" placeholder="category" name="category">
+                <label for="date">enter date</label>
+                <input type="date" id="date" name="createdAt">
+                <input type="number" placeholder="enter amount" name="amount">
+                <button>add expence</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

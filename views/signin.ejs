@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="http://localhost:3000/static/css/signup.css">
+</head>
+<style>
+    .for-signup{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+.d-flex{
+    border: 1px solid black;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+
+}
+.d-flex form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+input{
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+}
+button{
+    height: 45px;
+    width: 200px;
+}
+</style>
+<body>
+    <div class="for-signup">
+        <div class="d-flex">
+            <form action="/signin" method="post">
+                <h1>here you can sign in</h1>
+                <input type="email" placeholder="enter your email" name="email">
+                <input type="password" placeholder="enter your password" name="password">
+                <button> <a href="/expences">sign in</a></button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
